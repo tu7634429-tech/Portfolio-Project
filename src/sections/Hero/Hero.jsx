@@ -73,7 +73,7 @@ const Hero = () => {
 
             <div className="hero__image-info">
               <h3>Thevindu Ransara</h3>
-              <p>Software Engineer / UI Designer</p>
+              <p>Associate UI/UX Engineer</p>
               <span>Available for freelance projects</span>
             </div>
           </motion.div>
