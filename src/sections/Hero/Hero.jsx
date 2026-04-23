@@ -23,9 +23,9 @@ const Hero = () => {
 
           <SlideUp delay={0.2}>
             <h1 className="hero__title">
-              Creative
+              Thevindu
               <br />
-              Interfaces
+              Ransara
             </h1>
           </SlideUp>
 
