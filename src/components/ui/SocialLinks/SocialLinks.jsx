@@ -2,10 +2,10 @@ import { FaBehance, FaDribbble, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import "./SocialLinks.scss";
 
 const socialItems = [
-  { id: 1, icon: <FaGithub />, href: "https://github.com" },
-  { id: 2, icon: <FaLinkedinIn />, href: "https://linkedin.com" },
+  { id: 1, icon: <FaGithub />, href: "https://github.com/trsrathnayaka" },
+  { id: 2, icon: <FaLinkedinIn />, href: "https://lk.linkedin.com/in/thevindu-ransara-rathnayaka-20270921a" },
   { id: 3, icon: <FaDribbble />, href: "https://dribbble.com" },
-  { id: 4, icon: <FaBehance />, href: "https://behance.net" },
+  { id: 4, icon: <FaBehance />, href: "https://www.behance.net/SLCODEACADEMY?tracking_source=search_projects%7Cweb+sri+lanka" },
 ];
 
 const SocialLinks = () => {
