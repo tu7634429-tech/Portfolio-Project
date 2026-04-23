@@ -127,7 +127,7 @@ const caseStudies = [
     category: "Mobile App Development",
     year: "2026",
     image:
-      "https://kommodo.ai/i/bIAc2HmbCoHUtdi0L09e",
+      "https://www.image2url.com/r2/default/images/1776939478905-65423f75-1b05-49af-a269-372521136b3c.jpg",
     description:
       "A mobile banking app experience designed for trust, clarity, and intuitive day-to-day usage.",
   },
@@ -137,18 +137,18 @@ const caseStudies = [
     category: "Mobile App Development",
     year: "2025",
     image:
-      "https://kommodo.ai/i/InE429ETmATS6h61uohB",
+      "https://www.image2url.com/r2/default/images/1776939557762-8f12e7c7-9853-4e2d-9b54-fbfbe835d845.jpg",
     description:
       "A workout-focused app prototype designed around progress tracking and user motivation.",
   },
 
   {
     id: 15,
-    title: "Brand Campaign Visuals",
+    title: "Social media Design",
     category: "Graphic Design",
-    year: "2024",
+    year: "2026",
     image:
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1400&q=80",
+      "https://www.image2url.com/r2/default/images/1776939806593-884e7a02-70c3-45e7-b359-a85da62ea4da.jpg",
     description:
       "A campaign-ready design system built for storytelling, consistency, and strong recall.",
   },
@@ -158,7 +158,7 @@ const caseStudies = [
     category: "Graphic Design",
     year: "2026",
     image:
-      "https://kommodo.ai/i/YpNSbl8T6SY3L0ynHwyu",
+      "https://www.image2url.com/r2/default/images/1776939593784-c7a6173e-ac24-47bf-85ce-5c1aefdd572b.jpg",
     description:
       "A bold and consistent social media visual pack designed for digital campaigns and engagement.",
   },
@@ -168,7 +168,7 @@ const caseStudies = [
     category: "Graphic Design",
     year: "2026",
     image:
-      "https://kommodo.ai/i/KmWEfy57VsJzduBQQ7YB",
+      "https://www.image2url.com/r2/default/images/1776939639829-55f14813-54eb-4653-9358-cc636e19e916.jpg",
     description:
       "A high-impact poster series created for event promotion with bold composition and clear messaging.",
   },
@@ -178,7 +178,7 @@ const caseStudies = [
     category: "Graphic Design",
     year: "2026",
     image:
-      "https://kommodo.ai/i/FJYbZP6HPdb0jOiyUvsJ",
+      "https://www.image2url.com/r2/default/images/1776939681820-2f2728ce-9f59-4e3a-b52e-0643b034d321.jpeg",
     description:
       "A visual presentation system designed to communicate brand direction with clarity and polish.",
   },
@@ -188,7 +188,7 @@ const caseStudies = [
     category: "Graphic Design",
     year: "2026",
     image:
-      "https://kommodo.ai/i/PmjzFSxbPzFMfcX2mgDr",
+      "https://www.image2url.com/r2/default/images/1776939754983-8dbbf4d2-4033-496e-88a0-9ab0322efacc.jpeg",
     description:
       "A packaging concept built around shelf appeal, brand consistency, and premium visual language.",
   },
