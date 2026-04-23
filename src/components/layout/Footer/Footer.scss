@@ -1,0 +1,218 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+.footer {
+  position: relative;
+  padding: 100px 0 36px;
+  border-top: 1px solid $color-line;
+  overflow: hidden;
+
+  &__glow {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    pointer-events: none;
+    opacity: 0.14;
+    z-index: 0;
+
+    &--one {
+      width: 240px;
+      height: 240px;
+      top: 30px;
+      left: -60px;
+      background: rgba(249, 115, 22, 0.45);
+    }
+
+    &--two {
+      width: 220px;
+      height: 220px;
+      right: -60px;
+      bottom: 40px;
+      background: rgba(255, 255, 255, 0.12);
+    }
+  }
+
+  &__inner {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    gap: 42px;
+  }
+
+  &__top {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 34px;
+    align-items: start;
+  }
+
+  &__heading {
+    h2 {
+      font-size: clamp(2.8rem, 8vw, 6rem);
+      margin-top: 14px;
+      line-height: 0.92;
+      color: $color-text;
+      max-width: 760px;
+    }
+  }
+
+  &__newsletter {
+    padding: 26px;
+    border-radius: 24px;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0.025)
+    );
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(14px);
+
+    h3 {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      line-height: 1.5;
+      color: $color-text;
+      font-family: $font-display;
+      font-weight: 600;
+    }
+  }
+
+  &__newsletter-label {
+    display: inline-block;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: $color-accent;
+  }
+
+  &__newsletter-form {
+    margin-top: 20px;
+    display: flex;
+    gap: 12px;
+
+    input {
+      flex: 1;
+      height: 50px;
+      padding: 0 16px;
+      border-radius: 999px;
+      border: 1px solid $color-line;
+      background: rgba(255, 255, 255, 0.03);
+      color: $color-text;
+      outline: none;
+      transition: $transition-default;
+
+      &::placeholder {
+        color: $color-text-muted;
+      }
+
+      &:focus {
+        border-color: rgba(249, 115, 22, 0.35);
+      }
+    }
+
+    button {
+      height: 50px;
+      padding: 0 22px;
+      border-radius: 999px;
+      border: 1px solid $color-accent;
+      background: $color-accent;
+      color: #111;
+      font-weight: 600;
+      cursor: pointer;
+      transition: $transition-default;
+
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 14px 30px rgba(249, 115, 22, 0.22);
+      }
+    }
+  }
+
+  &__middle {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 24px;
+    align-items: start;
+  }
+
+  &__intro {
+    p {
+      max-width: 620px;
+      line-height: 1.9;
+      font-size: 1.02rem;
+      color: $color-text-muted;
+    }
+  }
+
+  &__contact {
+    display: grid;
+    gap: 10px;
+    justify-content: start;
+  }
+
+  &__contact-title {
+    display: inline-block;
+    margin-bottom: 4px;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: $color-accent;
+  }
+
+  &__contact a,
+  &__contact span {
+    color: $color-text-muted;
+    transition: $transition-default;
+    line-height: 1.7;
+  }
+
+  &__contact a:hover {
+    color: $color-text;
+  }
+
+  &__bottom {
+    padding-top: 22px;
+    border-top: 1px solid $color-line;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__bottom-text {
+    display: grid;
+    gap: 6px;
+    text-align: right;
+
+    p {
+      font-size: 0.92rem;
+      color: $color-text-muted;
+      margin: 0;
+    }
+  }
+
+  @include respond(md) {
+    &__top,
+    &__middle {
+      grid-template-columns: 1fr;
+    }
+
+    &__newsletter-form {
+      flex-direction: column;
+
+      input,
+      button {
+        width: 100%;
+      }
+    }
+
+    &__bottom {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__bottom-text {
+      text-align: left;
+    }
+  }
+}

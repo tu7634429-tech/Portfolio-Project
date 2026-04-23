@@ -1,0 +1,70 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.contact {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 0.95fr 1.05fr;
+    gap: 28px;
+    align-items: start;
+  }
+
+  &__info {
+    display: grid;
+    gap: 12px;
+    margin-top: 14px;
+
+    a,
+    span {
+      color: $color-text-muted;
+      transition: $transition-default;
+      font-size: 0.98rem;
+    }
+
+    a:hover {
+      color: $color-text;
+    }
+  }
+}
+
+.contact-form {
+  padding: 28px;
+  border-radius: $radius-md;
+  background: $color-surface;
+  border: 1px solid $color-line;
+
+  form {
+    display: grid;
+    gap: 16px;
+  }
+
+  &__group {
+    input,
+    textarea {
+      width: 100%;
+      border: 1px solid $color-line;
+      background: rgba(255, 255, 255, 0.03);
+      color: $color-text;
+      padding: 15px 16px;
+      border-radius: 14px;
+      outline: none;
+      transition: $transition-default;
+      resize: none;
+
+      &::placeholder {
+        color: $color-text-muted;
+      }
+
+      &:focus {
+        border-color: rgba(249, 115, 22, 0.45);
+        box-shadow: 0 0 0 4px rgba(249, 115, 22, 0.08);
+      }
+    }
+  }
+}
+
+@include respond(md) {
+  .contact__wrapper {
+    grid-template-columns: 1fr;
+  }
+}

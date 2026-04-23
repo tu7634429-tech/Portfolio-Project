@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Syne:wght@500;600;700;800&display=swap");
+
+@import "./variables";
+@import "./mixins";
+@import "./reset";
+@import "./typography";
+
+body {
+  background: $color-bg;
+  overflow-x: hidden;
+  color: $color-text;
+}
+
+.container {
+  @include container;
+}
+
+.section {
+  @include section-spacing;
+  border-top: 1px solid $color-line;
+}
+
+.card {
+  @include card;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+
+  @include respond(md) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+
+  @include respond(lg) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include respond(md) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 22px;
+  border-radius: 999px;
+  transition: $transition-default;
+  font-weight: 600;
+
+  &--primary {
+    background: $color-accent;
+    color: #111111;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 30px rgba(249, 115, 22, 0.28);
+    }
+  }
+
+  &--outline {
+    border: 1px solid $color-line;
+    color: $color-text;
+    background: transparent;
+
+    &:hover {
+      background: $color-surface;
+      border-color: rgba(255, 255, 255, 0.18);
+    }
+  }
+}

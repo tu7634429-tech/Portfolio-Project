@@ -1,0 +1,16 @@
+@import "../../styles/variables";
+
+.text-reveal {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__word-wrap {
+    overflow: hidden;
+    display: inline-flex;
+  }
+
+  &__word {
+    display: inline-block;
+    will-change: transform, opacity;
+  }
+}

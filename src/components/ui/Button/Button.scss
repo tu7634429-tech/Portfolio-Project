@@ -1,0 +1,35 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 22px;
+  border-radius: 999px;
+  transition: $transition-default;
+  font-weight: 600;
+  cursor: pointer;
+
+  &--primary {
+    background: $color-accent;
+    color: #111111;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 30px rgba(249, 115, 22, 0.28);
+    }
+  }
+
+  &--outline {
+    border: 1px solid $color-line;
+    color: $color-text;
+    background: transparent;
+
+    &:hover {
+      background: $color-surface;
+      border-color: rgba(255, 255, 255, 0.18);
+    }
+  }
+}

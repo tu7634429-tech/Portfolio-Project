@@ -1,0 +1,26 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  a {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    @include flex-center;
+    border: 1px solid $color-line;
+    color: $color-text-muted;
+    background: rgba(255, 255, 255, 0.03);
+    transition: $transition-default;
+
+    &:hover {
+      color: $color-text;
+      background: $color-surface;
+      transform: translateY(-2px);
+      border-color: rgba(255, 255, 255, 0.14);
+    }
+  }
+}

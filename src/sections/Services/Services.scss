@@ -1,0 +1,134 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.services {
+  position: relative;
+
+  &__grid {
+    margin-top: 42px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+.service-card {
+  position: relative;
+  min-height: 260px;
+  padding: 26px;
+  border-radius: 24px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.02)
+  );
+  border: 1px solid $color-line;
+  transition: $transition-default;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: rgba(249, 115, 22, 0.08);
+    filter: blur(28px);
+    transition: $transition-default;
+    pointer-events: none;
+  }
+
+  &:hover {
+    transform: translateY(-8px);
+    border-color: rgba(255, 255, 255, 0.14);
+
+    &::before {
+      transform: scale(1.15);
+      background: rgba(249, 115, 22, 0.14);
+    }
+
+    .service-card__number {
+      color: $color-accent;
+      border-color: rgba(249, 115, 22, 0.22);
+      background: rgba(249, 115, 22, 0.1);
+    }
+
+    .service-card__link {
+      color: $color-accent;
+      letter-spacing: 0.1em;
+    }
+
+    h3 {
+      color: $color-accent;
+    }
+  }
+
+  &__top {
+    margin-bottom: 26px;
+  }
+
+  &__number {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    @include flex-center;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.03);
+    color: $color-text;
+    font-weight: 700;
+    font-size: 0.95rem;
+    transition: $transition-default;
+  }
+
+  &__content {
+    h3 {
+      font-size: 1.35rem;
+      color: $color-text;
+      margin-bottom: 14px;
+      transition: $transition-default;
+    }
+
+    p {
+      font-size: 0.96rem;
+      line-height: 1.8;
+      color: $color-text-muted;
+      max-width: 95%;
+    }
+  }
+
+  &__bottom {
+    margin-top: auto;
+    padding-top: 24px;
+  }
+
+  &__link {
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: $color-text-muted;
+    transition: $transition-default;
+  }
+}
+
+@include respond(md) {
+  .services {
+    &__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .service-card {
+    min-height: auto;
+    padding: 22px;
+
+    &__content {
+      p {
+        max-width: 100%;
+      }
+    }
+  }
+}
