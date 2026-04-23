@@ -15,7 +15,7 @@ const caseStudies = [
     category: "UI/UX Design",
     year: "2025",
     image:
-      "https://getshared.com/d/tIYG32ms",
+      "https://res.cloudinary.com/db7r7c4e5/image/upload/v1776957232/wqslr6vrpeilibxdssvq.jpg",
     description:
       "A modern solution-led website concept with strong layout hierarchy and polished UI decisions.",
   },
