@@ -5,7 +5,7 @@ const caseStudies = [
     category: "Web Development",
     year: "2026",
     image:
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1400&q=80",
+      "https://www.image2url.com/r2/default/images/1776927643770-bac0fc1f-fb6a-49ef-98f3-e8e38173d9b4.jpg",
     description:
       "A premium portfolio website focused on strong layout hierarchy, performance, and interaction.",
   },
